@@ -59,32 +59,32 @@ final class TextFieldViewController: UIViewController, View {
     }
     
     func setupUI() {
-            view.addSubview(stackView)
-            stackView.addArrangedSubview(capitalizedStringLabel)
-            stackView.addArrangedSubview(lengthOfStringLabel)
-            stackView.addArrangedSubview(textfield)
+        view.addSubview(stackView)
+        stackView.addArrangedSubview(capitalizedStringLabel)
+        stackView.addArrangedSubview(lengthOfStringLabel)
+        stackView.addArrangedSubview(textfield)
+    }
+    
+    func setupAutoLayout() {
+        stackView.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+            make.horizontalEdges.equalToSuperview().inset(10)
+        }
+    }
+    
+    func setupAttributes() {
+        view.backgroundColor = UIColor.white
+        
+        stackView.do { view in
+            view.axis = .vertical
+            view.alignment = .fill
+            view.distribution = .fillProportionally
+            view.spacing = 10
         }
         
-        func setupAutoLayout() {
-            stackView.snp.makeConstraints { make in
-                make.center.equalToSuperview()
-                make.horizontalEdges.equalToSuperview().inset(10)
-            }
+        textfield.do { view in
+            view.borderStyle = .bezel
         }
-        
-        func setupAttributes() {
-            view.backgroundColor = UIColor.white
-            
-            stackView.do { view in
-                view.axis = .vertical
-                view.alignment = .fill
-                view.distribution = .fillProportionally
-                view.spacing = 10
-            }
-            
-            textfield.do { view in
-                view.borderStyle = .bezel
-            }
-            textfield.becomeFirstResponder()
-        }
+        textfield.becomeFirstResponder()
+    }
 }
