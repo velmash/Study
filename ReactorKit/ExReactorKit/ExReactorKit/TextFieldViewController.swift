@@ -19,6 +19,7 @@ final class TextFieldViewController: UIViewController, View {
     var capitalizedStringLabel: UILabel = UILabel()
     var lengthOfStringLabel: UILabel = UILabel()
     
+    var settingButton: UIButton = UIButton(configuration: .borderedProminent())
     var stackView: UIStackView = UIStackView()
     
     var disposeBag: DisposeBag = DisposeBag()
@@ -46,6 +47,12 @@ final class TextFieldViewController: UIViewController, View {
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
         
+        settingButton.rx.tap
+            .throttle(.microseconds(300), scheduler: MainScheduler.instance)
+            .map { Reactor.Action.didTapSettingButton }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        
         reactor.state.map { $0.capitalizedString }
             .distinctUntilChanged()
             .bind(to: capitalizedStringLabel.rx.text)
@@ -68,6 +75,13 @@ final class TextFieldViewController: UIViewController, View {
                 $0.showWarningAlert($1)
             }
             .disposed(by: disposeBag)
+        
+        reactor.pulse(\.$settingViewController)
+            .compactMap { $0 }
+            .bind(with: self) { owner, vc in
+                owner.navigationController?.pushViewController(vc, animated: true)
+            }
+            .disposed(by: disposeBag)
     }
     
     func setupUI() {
@@ -75,6 +89,7 @@ final class TextFieldViewController: UIViewController, View {
         stackView.addArrangedSubview(capitalizedStringLabel)
         stackView.addArrangedSubview(lengthOfStringLabel)
         stackView.addArrangedSubview(textfield)
+        stackView.addArrangedSubview(settingButton)
     }
     
     func setupAutoLayout() {
@@ -97,6 +112,11 @@ final class TextFieldViewController: UIViewController, View {
         textfield.do { view in
             view.borderStyle = .bezel
         }
+        
+        settingButton.do { btn in
+            btn.setTitle("설정", for: .normal)
+        }
+        
         textfield.becomeFirstResponder()
     }
 }

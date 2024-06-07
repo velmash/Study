@@ -19,7 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         
-        let reactor = TextFieldViewReactor(backgroundColor: UIColor.systemTeal)
+        let provider = ServiceProvider()
+        let reactor = TextFieldViewReactor(backgroundColor: UIColor.systemTeal, service: provider)
         let textfieldViewController = TextFieldViewController(reactor: reactor)
         
         window?.windowScene = windowScene

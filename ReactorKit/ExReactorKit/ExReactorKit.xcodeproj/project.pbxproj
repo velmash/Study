@@ -19,6 +19,9 @@
 		3AA99B762C12C12C00FE171F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3AA99B752C12C12C00FE171F /* SnapKit */; };
 		3AA99B792C12C13700FE171F /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 3AA99B782C12C13700FE171F /* Then */; };
 		3AA99B7B2C12C14300FE171F /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA99B7A2C12C14300FE171F /* TextFieldViewController.swift */; };
+		3AA99B7D2C12CDBC00FE171F /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA99B7C2C12CDBC00FE171F /* ServiceProvider.swift */; };
+		3AA99B7F2C12CEA100FE171F /* SettingViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA99B7E2C12CEA100FE171F /* SettingViewReactor.swift */; };
+		3AA99B812C12CEB600FE171F /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA99B802C12CEB600FE171F /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		3AA99B622C12BE4300FE171F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AA99B722C12BFD100FE171F /* TextFieldViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewReactor.swift; sourceTree = "<group>"; };
 		3AA99B7A2C12C14300FE171F /* TextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
+		3AA99B7C2C12CDBC00FE171F /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		3AA99B7E2C12CEA100FE171F /* SettingViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewReactor.swift; sourceTree = "<group>"; };
+		3AA99B802C12CEB600FE171F /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,9 @@
 				3AA99B622C12BE4300FE171F /* Info.plist */,
 				3AA99B722C12BFD100FE171F /* TextFieldViewReactor.swift */,
 				3AA99B7A2C12C14300FE171F /* TextFieldViewController.swift */,
+				3AA99B7C2C12CDBC00FE171F /* ServiceProvider.swift */,
+				3AA99B7E2C12CEA100FE171F /* SettingViewReactor.swift */,
+				3AA99B802C12CEB600FE171F /* SettingViewController.swift */,
 			);
 			path = ExReactorKit;
 			sourceTree = "<group>";
@@ -164,8 +173,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AA99B7B2C12C14300FE171F /* TextFieldViewController.swift in Sources */,
+				3AA99B7D2C12CDBC00FE171F /* ServiceProvider.swift in Sources */,
+				3AA99B7F2C12CEA100FE171F /* SettingViewReactor.swift in Sources */,
 				3AA99B732C12BFD100FE171F /* TextFieldViewReactor.swift in Sources */,
 				3AA99B552C12BE4200FE171F /* AppDelegate.swift in Sources */,
+				3AA99B812C12CEB600FE171F /* SettingViewController.swift in Sources */,
 				3AA99B572C12BE4200FE171F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
