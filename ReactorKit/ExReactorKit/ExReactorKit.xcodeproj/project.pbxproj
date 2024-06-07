@@ -9,25 +9,27 @@
 /* Begin PBXBuildFile section */
 		3AA99B552C12BE4200FE171F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA99B542C12BE4200FE171F /* AppDelegate.swift */; };
 		3AA99B572C12BE4200FE171F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA99B562C12BE4200FE171F /* SceneDelegate.swift */; };
-		3AA99B592C12BE4200FE171F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA99B582C12BE4200FE171F /* ViewController.swift */; };
-		3AA99B5C2C12BE4200FE171F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3AA99B5B2C12BE4200FE171F /* Base */; };
 		3AA99B5E2C12BE4300FE171F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AA99B5D2C12BE4300FE171F /* Assets.xcassets */; };
 		3AA99B612C12BE4300FE171F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3AA99B602C12BE4300FE171F /* Base */; };
 		3AA99B6A2C12BF1900FE171F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 3AA99B692C12BF1900FE171F /* RxCocoa */; };
 		3AA99B6C2C12BF1900FE171F /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 3AA99B6B2C12BF1900FE171F /* RxRelay */; };
 		3AA99B6E2C12BF1900FE171F /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3AA99B6D2C12BF1900FE171F /* RxSwift */; };
 		3AA99B712C12BF4D00FE171F /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3AA99B702C12BF4D00FE171F /* ReactorKit */; };
+		3AA99B732C12BFD100FE171F /* TextFieldViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA99B722C12BFD100FE171F /* TextFieldViewReactor.swift */; };
+		3AA99B762C12C12C00FE171F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3AA99B752C12C12C00FE171F /* SnapKit */; };
+		3AA99B792C12C13700FE171F /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 3AA99B782C12C13700FE171F /* Then */; };
+		3AA99B7B2C12C14300FE171F /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA99B7A2C12C14300FE171F /* TextFieldViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3AA99B512C12BE4200FE171F /* ExReactorKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExReactorKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA99B542C12BE4200FE171F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AA99B562C12BE4200FE171F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3AA99B582C12BE4200FE171F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3AA99B5B2C12BE4200FE171F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3AA99B5D2C12BE4300FE171F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AA99B602C12BE4300FE171F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AA99B622C12BE4300FE171F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AA99B722C12BFD100FE171F /* TextFieldViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewReactor.swift; sourceTree = "<group>"; };
+		3AA99B7A2C12C14300FE171F /* TextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,9 +38,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AA99B6E2C12BF1900FE171F /* RxSwift in Frameworks */,
+				3AA99B792C12C13700FE171F /* Then in Frameworks */,
 				3AA99B6C2C12BF1900FE171F /* RxRelay in Frameworks */,
 				3AA99B712C12BF4D00FE171F /* ReactorKit in Frameworks */,
 				3AA99B6A2C12BF1900FE171F /* RxCocoa in Frameworks */,
+				3AA99B762C12C12C00FE171F /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,11 +70,11 @@
 			children = (
 				3AA99B542C12BE4200FE171F /* AppDelegate.swift */,
 				3AA99B562C12BE4200FE171F /* SceneDelegate.swift */,
-				3AA99B582C12BE4200FE171F /* ViewController.swift */,
-				3AA99B5A2C12BE4200FE171F /* Main.storyboard */,
 				3AA99B5D2C12BE4300FE171F /* Assets.xcassets */,
 				3AA99B5F2C12BE4300FE171F /* LaunchScreen.storyboard */,
 				3AA99B622C12BE4300FE171F /* Info.plist */,
+				3AA99B722C12BFD100FE171F /* TextFieldViewReactor.swift */,
+				3AA99B7A2C12C14300FE171F /* TextFieldViewController.swift */,
 			);
 			path = ExReactorKit;
 			sourceTree = "<group>";
@@ -96,6 +100,8 @@
 				3AA99B6B2C12BF1900FE171F /* RxRelay */,
 				3AA99B6D2C12BF1900FE171F /* RxSwift */,
 				3AA99B702C12BF4D00FE171F /* ReactorKit */,
+				3AA99B752C12C12C00FE171F /* SnapKit */,
+				3AA99B782C12C13700FE171F /* Then */,
 			);
 			productName = ExReactorKit;
 			productReference = 3AA99B512C12BE4200FE171F /* ExReactorKit.app */;
@@ -128,6 +134,8 @@
 			packageReferences = (
 				3AA99B682C12BF1900FE171F /* XCRemoteSwiftPackageReference "RxSwift" */,
 				3AA99B6F2C12BF4D00FE171F /* XCRemoteSwiftPackageReference "ReactorKit" */,
+				3AA99B742C12C12C00FE171F /* XCRemoteSwiftPackageReference "SnapKit" */,
+				3AA99B772C12C13700FE171F /* XCRemoteSwiftPackageReference "Then" */,
 			);
 			productRefGroup = 3AA99B522C12BE4200FE171F /* Products */;
 			projectDirPath = "";
@@ -145,7 +153,6 @@
 			files = (
 				3AA99B5E2C12BE4300FE171F /* Assets.xcassets in Resources */,
 				3AA99B612C12BE4300FE171F /* Base in Resources */,
-				3AA99B5C2C12BE4200FE171F /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,7 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AA99B592C12BE4200FE171F /* ViewController.swift in Sources */,
+				3AA99B7B2C12C14300FE171F /* TextFieldViewController.swift in Sources */,
+				3AA99B732C12BFD100FE171F /* TextFieldViewReactor.swift in Sources */,
 				3AA99B552C12BE4200FE171F /* AppDelegate.swift in Sources */,
 				3AA99B572C12BE4200FE171F /* SceneDelegate.swift in Sources */,
 			);
@@ -165,14 +173,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3AA99B5A2C12BE4200FE171F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3AA99B5B2C12BE4200FE171F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3AA99B5F2C12BE4300FE171F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -399,6 +399,22 @@
 				minimumVersion = 3.2.0;
 			};
 		};
+		3AA99B742C12C12C00FE171F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		3AA99B772C12C13700FE171F /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -421,6 +437,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3AA99B6F2C12BF4D00FE171F /* XCRemoteSwiftPackageReference "ReactorKit" */;
 			productName = ReactorKit;
+		};
+		3AA99B752C12C12C00FE171F /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3AA99B742C12C12C00FE171F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		3AA99B782C12C13700FE171F /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3AA99B772C12C13700FE171F /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
