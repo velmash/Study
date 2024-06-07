@@ -56,6 +56,11 @@ final class TextFieldViewController: UIViewController, View {
             .distinctUntilChanged()
             .bind(to: lengthOfStringLabel.rx.text)
             .disposed(by: disposeBag)
+        
+        reactor.state.map { $0.backgroundColor }
+            .distinctUntilChanged()
+            .bind(to: view.rx.backgroundColor)
+            .disposed(by: disposeBag)
     }
     
     func setupUI() {

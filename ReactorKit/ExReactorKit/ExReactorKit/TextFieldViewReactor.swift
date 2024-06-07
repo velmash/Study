@@ -20,14 +20,20 @@ final class TextFieldViewReactor: Reactor {
     }
     
     struct State {
+        var backgroundColor: UIColor?
+        
         var capitalizedString: String?
         var lengthOfString: Int?
     }
     
     var initialState: State
     
-    init() {
-        self.initialState = State()
+    init(
+        backgroundColor color: UIColor? = nil
+    ) {
+        self.initialState = State(
+            backgroundColor: color
+        )
     }
     
     func mutate(action: Action) -> Observable<Mutation> {
