@@ -15,6 +15,7 @@ final class TextFieldViewReactor: Reactor {
     }
     
     enum Mutation {
+        case showAlertMessage(String)
         case setLengthOfString(Int)
         case setCapitalizedString(String)
     }
@@ -24,6 +25,7 @@ final class TextFieldViewReactor: Reactor {
         
         var capitalizedString: String?
         var lengthOfString: Int?
+        @Pulse var alertMessage: String?
     }
     
     var initialState: State
@@ -39,12 +41,16 @@ final class TextFieldViewReactor: Reactor {
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
         case let .inputField(input):
-            let lengthOfString = input.count
-            let capitalizedString = input.uppercased()
-            return Observable<Mutation>.concat(
-                Observable.just(.setLengthOfString(lengthOfString)),
-                Observable.just(.setCapitalizedString(capitalizedString))
-            )
+            if input.isNumber {
+                return Observable<Mutation>.just(.showAlertMessage("소문자를 입력할 수 없습니다."))
+            } else {
+                let lengthOfString = input.count
+                let capitalizedString = input.uppercased()
+                return Observable<Mutation>.concat(
+                    Observable.just(.setLengthOfString(lengthOfString)),
+                    Observable.just(.setCapitalizedString(capitalizedString))
+                )
+            }
         }
     }
     
@@ -55,8 +61,18 @@ final class TextFieldViewReactor: Reactor {
             newState.lengthOfString = length
         case let .setCapitalizedString(string):
             newState.capitalizedString = string
+        case let .showAlertMessage(message):
+            newState.alertMessage = message
         }
         
         return newState
+    }
+}
+
+extension String {
+    var isNumber: Bool {
+        return self.range(
+            of: ".*[0-9]+.*",
+            options: .regularExpression) != nil
     }
 }

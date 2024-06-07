@@ -61,6 +61,13 @@ final class TextFieldViewController: UIViewController, View {
             .distinctUntilChanged()
             .bind(to: view.rx.backgroundColor)
             .disposed(by: disposeBag)
+        
+        reactor.pulse(\.$alertMessage)
+            .compactMap { $0 }
+            .bind(with: self) {
+                $0.showWarningAlert($1)
+            }
+            .disposed(by: disposeBag)
     }
     
     func setupUI() {
@@ -91,5 +98,24 @@ final class TextFieldViewController: UIViewController, View {
             view.borderStyle = .bezel
         }
         textfield.becomeFirstResponder()
+    }
+}
+
+extension TextFieldViewController {
+    func showWarningAlert(_ message: String) {
+        textfield.text?.removeAll()
+        lengthOfStringLabel.text = "0"
+        capitalizedStringLabel.text?.removeAll()
+        
+        let alert = UIAlertController(
+            title: "입력 오류",
+            message: message,
+            preferredStyle: .alert
+        )
+        
+        let ok = UIAlertAction(title: "확인", style: .default)
+        alert.addAction(ok)
+        
+        present(alert, animated: true)
     }
 }
