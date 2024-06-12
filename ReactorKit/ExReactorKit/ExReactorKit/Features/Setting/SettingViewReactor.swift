@@ -13,16 +13,19 @@ final class SettingViewReactor: Reactor {
     // MARK: - Action
     enum Action {
         case didTapButton
+        case didTapUserButton
     }
     
     // MARK: - Mutation
     enum Mutation {
         case setBackgroundColor(UIColor?)
+        case pushUserViewController(UIViewController?)
     }
     
     // MARK: - State
     struct State {
         var backgroundColor: UIColor?
+        @Pulse var userViewController: UIViewController?
     }
     
     // MARK: - Properties
@@ -49,6 +52,11 @@ final class SettingViewReactor: Reactor {
             let color = colors.randomElement()
             provider.settings.setBackgroundColor(color) // ⭐️
             return Observable<Mutation>.just(.setBackgroundColor(color))
+        
+        case .didTapUserButton:
+            let reactor = UserViewReactor(provider: provider)
+            let viewController = UserViewController(reactor: reactor)
+            return Observable<Mutation>.just(.pushUserViewController(viewController))
         }
     }
     
@@ -58,6 +66,8 @@ final class SettingViewReactor: Reactor {
         switch mutation {
         case let .setBackgroundColor(color):
             newState.backgroundColor = color
+        case let .pushUserViewController(viewController):
+            newState.userViewController = viewController
         }
         return newState
     }

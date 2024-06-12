@@ -19,9 +19,17 @@
 		3AA99B762C12C12C00FE171F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3AA99B752C12C12C00FE171F /* SnapKit */; };
 		3AA99B792C12C13700FE171F /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 3AA99B782C12C13700FE171F /* Then */; };
 		3AA99B7B2C12C14300FE171F /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA99B7A2C12C14300FE171F /* TextFieldViewController.swift */; };
-		3AA99B7D2C12CDBC00FE171F /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA99B7C2C12CDBC00FE171F /* ServiceProvider.swift */; };
 		3AA99B7F2C12CEA100FE171F /* SettingViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA99B7E2C12CEA100FE171F /* SettingViewReactor.swift */; };
 		3AA99B812C12CEB600FE171F /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA99B802C12CEB600FE171F /* SettingViewController.swift */; };
+		3AA99B862C12DDA600FE171F /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA99B852C12DDA600FE171F /* String+Extension.swift */; };
+		3AA99B8B2C12DDDA00FE171F /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA99B8A2C12DDDA00FE171F /* BaseService.swift */; };
+		3AA99B8E2C198BA100FE171F /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA99B8D2C198BA100FE171F /* ServiceProvider.swift */; };
+		3AA99B902C19996E00FE171F /* SettingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA99B8F2C19996E00FE171F /* SettingService.swift */; };
+		3AA99B922C19999500FE171F /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA99B912C19999500FE171F /* UserService.swift */; };
+		3AA99B942C19999E00FE171F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA99B932C19999E00FE171F /* User.swift */; };
+		3AA99B9A2C199A2500FE171F /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA99B992C199A2500FE171F /* UserViewController.swift */; };
+		3AA99B9C2C199A2D00FE171F /* UserViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA99B9B2C199A2D00FE171F /* UserViewReactor.swift */; };
+		3AA99B9E2C199A3F00FE171F /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA99B9D2C199A3F00FE171F /* NotificationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +41,17 @@
 		3AA99B622C12BE4300FE171F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AA99B722C12BFD100FE171F /* TextFieldViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewReactor.swift; sourceTree = "<group>"; };
 		3AA99B7A2C12C14300FE171F /* TextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
-		3AA99B7C2C12CDBC00FE171F /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
 		3AA99B7E2C12CEA100FE171F /* SettingViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewReactor.swift; sourceTree = "<group>"; };
 		3AA99B802C12CEB600FE171F /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		3AA99B852C12DDA600FE171F /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		3AA99B8A2C12DDDA00FE171F /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		3AA99B8D2C198BA100FE171F /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		3AA99B8F2C19996E00FE171F /* SettingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingService.swift; sourceTree = "<group>"; };
+		3AA99B912C19999500FE171F /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		3AA99B932C19999E00FE171F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3AA99B992C199A2500FE171F /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		3AA99B9B2C199A2D00FE171F /* UserViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewReactor.swift; sourceTree = "<group>"; };
+		3AA99B9D2C199A3F00FE171F /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,18 +90,114 @@
 		3AA99B532C12BE4200FE171F /* ExReactorKit */ = {
 			isa = PBXGroup;
 			children = (
-				3AA99B542C12BE4200FE171F /* AppDelegate.swift */,
-				3AA99B562C12BE4200FE171F /* SceneDelegate.swift */,
-				3AA99B5D2C12BE4300FE171F /* Assets.xcassets */,
-				3AA99B5F2C12BE4300FE171F /* LaunchScreen.storyboard */,
-				3AA99B622C12BE4300FE171F /* Info.plist */,
-				3AA99B722C12BFD100FE171F /* TextFieldViewReactor.swift */,
-				3AA99B7A2C12C14300FE171F /* TextFieldViewController.swift */,
-				3AA99B7C2C12CDBC00FE171F /* ServiceProvider.swift */,
-				3AA99B7E2C12CEA100FE171F /* SettingViewReactor.swift */,
-				3AA99B802C12CEB600FE171F /* SettingViewController.swift */,
+				3AA99B822C12DD7900FE171F /* App */,
+				3AA99B832C12DD8500FE171F /* Common */,
+				3AA99B882C12DDC400FE171F /* Models */,
+				3AA99B892C12DDCD00FE171F /* Services */,
+				3AA99B952C1999B000FE171F /* Features */,
+				3AA99B9F2C199AAE00FE171F /* Resources */,
 			);
 			path = ExReactorKit;
+			sourceTree = "<group>";
+		};
+		3AA99B822C12DD7900FE171F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3AA99B542C12BE4200FE171F /* AppDelegate.swift */,
+				3AA99B562C12BE4200FE171F /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3AA99B832C12DD8500FE171F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3AA99B872C12DDBB00FE171F /* Utilities */,
+				3AA99B842C12DD9A00FE171F /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3AA99B842C12DD9A00FE171F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3AA99B852C12DDA600FE171F /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3AA99B872C12DDBB00FE171F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		3AA99B882C12DDC400FE171F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3AA99B932C19999E00FE171F /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3AA99B892C12DDCD00FE171F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3AA99B8A2C12DDDA00FE171F /* BaseService.swift */,
+				3AA99B8D2C198BA100FE171F /* ServiceProvider.swift */,
+				3AA99B8F2C19996E00FE171F /* SettingService.swift */,
+				3AA99B912C19999500FE171F /* UserService.swift */,
+				3AA99B9D2C199A3F00FE171F /* NotificationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3AA99B952C1999B000FE171F /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				3AA99B962C1999BA00FE171F /* TextField */,
+				3AA99B972C1999C400FE171F /* Setting */,
+				3AA99B982C199A1A00FE171F /* User */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		3AA99B962C1999BA00FE171F /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				3AA99B7A2C12C14300FE171F /* TextFieldViewController.swift */,
+				3AA99B722C12BFD100FE171F /* TextFieldViewReactor.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		3AA99B972C1999C400FE171F /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				3AA99B802C12CEB600FE171F /* SettingViewController.swift */,
+				3AA99B7E2C12CEA100FE171F /* SettingViewReactor.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		3AA99B982C199A1A00FE171F /* User */ = {
+			isa = PBXGroup;
+			children = (
+				3AA99B992C199A2500FE171F /* UserViewController.swift */,
+				3AA99B9B2C199A2D00FE171F /* UserViewReactor.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		3AA99B9F2C199AAE00FE171F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3AA99B622C12BE4300FE171F /* Info.plist */,
+				3AA99B5D2C12BE4300FE171F /* Assets.xcassets */,
+				3AA99B5F2C12BE4300FE171F /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,13 +284,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AA99B862C12DDA600FE171F /* String+Extension.swift in Sources */,
 				3AA99B7B2C12C14300FE171F /* TextFieldViewController.swift in Sources */,
-				3AA99B7D2C12CDBC00FE171F /* ServiceProvider.swift in Sources */,
+				3AA99B9A2C199A2500FE171F /* UserViewController.swift in Sources */,
 				3AA99B7F2C12CEA100FE171F /* SettingViewReactor.swift in Sources */,
 				3AA99B732C12BFD100FE171F /* TextFieldViewReactor.swift in Sources */,
+				3AA99B902C19996E00FE171F /* SettingService.swift in Sources */,
 				3AA99B552C12BE4200FE171F /* AppDelegate.swift in Sources */,
+				3AA99B922C19999500FE171F /* UserService.swift in Sources */,
+				3AA99B8E2C198BA100FE171F /* ServiceProvider.swift in Sources */,
+				3AA99B942C19999E00FE171F /* User.swift in Sources */,
+				3AA99B9C2C199A2D00FE171F /* UserViewReactor.swift in Sources */,
 				3AA99B812C12CEB600FE171F /* SettingViewController.swift in Sources */,
 				3AA99B572C12BE4200FE171F /* SceneDelegate.swift in Sources */,
+				3AA99B9E2C199A3F00FE171F /* NotificationService.swift in Sources */,
+				3AA99B8B2C12DDDA00FE171F /* BaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +444,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FP8CB3BY93;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ExReactorKit/Info.plist;
+				INFOPLIST_FILE = ExReactorKit/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -355,7 +475,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FP8CB3BY93;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ExReactorKit/Info.plist;
+				INFOPLIST_FILE = ExReactorKit/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

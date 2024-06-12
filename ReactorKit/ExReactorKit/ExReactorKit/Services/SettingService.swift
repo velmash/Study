@@ -1,20 +1,12 @@
 //
-//  ServiceProvider.swift
+//  SettingService.swift
 //  ExReactorKit
 //
-//  Created by 윤형찬 on 6/7/24.
+//  Created by 윤형찬 on 6/12/24.
 //
 
 import UIKit
 import RxSwift
-
-class BaseService {
-    unowned let provider: ServiceProviderProtocol
-    
-    init(provider: ServiceProviderProtocol) {
-        self.provider = provider
-    }
-}
 
 enum SettingEvent {
     case setBackgroundColor(UIColor?)
@@ -34,13 +26,4 @@ final class SettingService: BaseService, SettingServiceProtocol {
         event.onNext(.setBackgroundColor(color))
         return Observable<UIColor?>.just(color)
     }
-}
-
-
-protocol ServiceProviderProtocol: AnyObject {
-    var settings: SettingServiceProtocol { get }
-}
-
-final class ServiceProvider: ServiceProviderProtocol {
-    lazy var settings: SettingServiceProtocol = SettingService(provider: self)
 }
